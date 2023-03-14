@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <title>ark</title>
+    <tr>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <style>
+            /* Define the animation */
+            @keyframes spin {
+              0% {
+                transform: rotateX(0deg) rotateY(0deg);
+              }
+              100% {
+                transform: rotateX(360deg) rotateY(360deg);
+              }
+            }
+
+            /* Apply the animation to the cube */
+            .cube {
+              position: relative;
+              margin: 100px auto;
+              transform-style: preserve-3d;
+              animation: spin 5s linear infinite;
+            }
+
+            /* Define the faces of the cube */
+            .cube-face {
+              position: absolute;
+              width: 200px;
+              height: 200px;
+              border: 2px solid rgb(106, 104, 214);
+              background-color: rgb(255, 255, 255);
+            }
+
+            /* Position the faces of the cube */
+            .cube-face.front {
+              transform: translateZ(100px);
+            }
+            .cube-face.back {
+              transform: translateZ(-100px) rotateY(180deg);
+            }
+            .cube-face.right {
+              transform: rotateY(90deg) translateX(100px);
+            }
+            .cube-face.left {
+              transform: rotateY(-90deg) translateX(-100px);
+            }
+            .cube-face.top {
+              transform: rotateX(90deg) translateY(-100px);
+            }
+            .cube-face.bottom {
+              transform: rotateX(-90deg) translateY(100px);
+            }
+          </style>
+        </head>
+        <body>
+          <div class="cube">
+            <div class="cube-face front">1</div>
+            <div class="cube-face back">2</div>
+            <div class="cube-face right">3</div>
+            <div class="cube-face left">4</div>
+            <div class="cube-face top">5</div>
+            <div class="cube-face bottom">6</div>
+          </div>
+        </body>
+      </html>
+    </tr>
+    <ul>
+      <li><a href="index2.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="batelroyal.html">batel royal</a></li>
+      <li><a href="ark.html">ark</a></li>
+      <li><a href="hhh.html">hhhh</a></li>
+    </ul>
+    <img
+      src="https://playpc.io/wp-content/uploads/2020/08/ark-sruvival-evolved-wallpaper.jpg" />
+  </body>
+</html>
